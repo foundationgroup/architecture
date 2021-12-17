@@ -40,5 +40,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream
+        include: hystrix.stream, info, health, metrics, httptrace, scheduledtasks, loggers, env, configprops, beans, heapdump, threaddump
 
