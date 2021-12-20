@@ -6,3 +6,26 @@ spring:
     name: DEPARTMENT-SERVICE
   zipkin:
     base-url: http://127.0.0.1:9411/
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health
+        
+logging:
+  file:
+    name: D:/work/www-architecture/microservice.log        
+        
+        

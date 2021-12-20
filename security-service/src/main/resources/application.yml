@@ -1,0 +1,30 @@
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google :
+#            clientId: 16590295129-35vae39bhufcib2dkgebiq4ipd80u8ee.apps.googleusercontent.com
+#            clientSecret: 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
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            clientId: c4aab2c7abf1d2b1a1ca
+#            clientSecret: e308db0dc856d297d8bafef20f75a63f6ee7706f
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            clientId: 681402486564884
+            clientSecret: e446e93fcacb8ac8e15539b074fb9fa2
+
+
+server:
+  port: 9005
