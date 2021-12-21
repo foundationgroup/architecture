@@ -129,13 +129,13 @@ Centralized logging in the microservice architecture...
 
 elasticsearch - 
 --------------
-D:\elk\elasticsearch-7.16.1\bin>elasticsearch.bat
+D:\Program Files\elk\elasticsearch-7.16.1\bin>elasticsearch.bat
 http://localhost:9200/
 http://localhost:9200/_cat/indices
 
 kibana - 
 ---------
-D:\elk\kibana-7.16.1-windows-x86_64\bin>kibana.bat
+D:\Program Files\elk\kibana-7.16.1-windows-x86_64\bin>kibana.bat
 http://localhost:5601/app/home#/
 
 create indices - 
@@ -166,7 +166,7 @@ POST tapan/default/
 
 logstash - 
 ----------
-D:\elk\logstash-7.16.1\bin>logstash.bat logstash.conf
+D:\Program Files\elk\logstash-7.16.1\bin>logstash.bat -f logstash.conf
 Extract all the logs from the log file, send it to elasticsearch, then elasticsearch sends it to kibana.
 
 
@@ -174,6 +174,7 @@ Extract all the logs from the log file, send it to elasticsearch, then elasticse
 Spring Security - Oauth2
 ------------------------------------
 ------------------------------------
+try accessing  - http://localhost:9005/ and then, http://localhost:9005/user
 google
 -----------
 client id - 16590295129-35vae39bhufcib2dkgebiq4ipd80u8ee.apps.googleusercontent.com
