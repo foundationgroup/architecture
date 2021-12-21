@@ -440,3 +440,18 @@ java.lang.NullPointerException: null
 ]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@42085f9b
 2021-12-21 00:00:20.461  INFO [USER-SERVICE,548df28b7358a54f,a3c8b08f1ab573d8,true] 20244 --- [http-nio-9002-exec-3] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
 2021-12-21 00:00:20.461  INFO [USER-SERVICE,548df28b7358a54f,a3c8b08f1ab573d8,true] 20244 --- [http-nio-9002-exec-3] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-21 00:00:20.471  INFO [DEPARTMENT-SERVICE,548df28b7358a54f,a3c8b08f1ab573d8,true] 4764 --- [http-nio-9001-exec-8] c.t.d.controller.DepartmentController    : Inside findDepartmentById method of DepartmentController
+2021-12-21 00:00:20.477  INFO [DEPARTMENT-SERVICE,548df28b7358a54f,a3c8b08f1ab573d8,true] 4764 --- [http-nio-9001-exec-8] c.t.d.service.DepartmentService          : Inside saveDepartment of DepartmentService
+2021-12-21 00:00:21.424  INFO [USER-SERVICE,,,] 20244 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: DEPARTMENT-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-12-21 00:02:57.610  INFO [DEPARTMENT-SERVICE,,,] 4764 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:03:01.214  INFO [USER-SERVICE,,,] 20244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:03:05.581  INFO [order-service,,,] 2748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:03:09.680  INFO [payment-service,,,] 3032 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:07:57.626  INFO [DEPARTMENT-SERVICE,,,] 4764 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:08:01.226  INFO [USER-SERVICE,,,] 20244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:08:05.602  INFO [order-service,,,] 2748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:08:09.697  INFO [payment-service,,,] 3032 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:12:57.631  INFO [DEPARTMENT-SERVICE,,,] 4764 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:13:01.237  INFO [USER-SERVICE,,,] 20244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:13:05.612  INFO [order-service,,,] 2748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-21 00:13:09.712  INFO [payment-service,,,] 3032 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
