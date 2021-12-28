@@ -191,3 +191,22 @@ Client ID - c4aab2c7abf1d2b1a1ca
 Client secret - e308db0dc856d297d8bafef20f75a63f6ee7706f
 
 
+Messaging-
+-----------------------------------------
+-----------------------------------------
+kafka
+---------
+start zookeeper.start bat file like below
+D:\kafka_2.12-2.8.1\bin\windows>zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+start kafka server
+D:\kafka_2.12-2.8.1\bin\windows>kafka-server-start.bat ..\..\config\server.properties
+
+Create Topic:
+D:\kafka_2.12-2.8.1\bin\windows>kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic myTopic
+
+Produce a message
+D:\kafka_2.12-2.8.1\bin\windows>kafka-console-producer.bat --broker-list localhost:9092 --topic myTopic
+
+Consume a message
+D:\kafka_2.12-2.8.1\bin\windows>kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic myTopic
